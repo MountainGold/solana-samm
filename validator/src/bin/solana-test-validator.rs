@@ -51,6 +51,8 @@ enum Output {
 }
 
 fn main() {
+    println!("Starting test validator... Test Label");
+    // let mut input = String::new();
     let default_args = cli::DefaultTestArgs::new();
     let version = solana_version::version!();
     let matches = cli::test_app(version, &default_args).get_matches();

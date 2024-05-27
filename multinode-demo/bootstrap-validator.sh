@@ -18,6 +18,8 @@ if [[ -n $SOLANA_CUDA ]]; then
 else
   program=$solana_validator
 fi
+echo "Using program: $program"
+
 
 no_restart=0
 maybeRequireTower=true
@@ -141,6 +143,8 @@ args+=(
   --ledger "$ledger_dir"
   --rpc-port 8899
   --snapshot-interval-slots 200
+  # --snapshot-interval-slots 20000
+  # --no-snapshot-fetch
   --no-incremental-snapshots
   --identity "$identity"
   --vote-account "$vote_account"
@@ -174,6 +178,7 @@ kill_node_and_exit() {
 }
 
 trap 'kill_node_and_exit' INT TERM ERR
+
 
 while true; do
   echo "$program ${args[*]}"

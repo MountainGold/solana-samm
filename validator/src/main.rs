@@ -457,6 +457,11 @@ fn configure_banking_trace_dir_byte_limit(
 }
 
 pub fn main() {
+    println!("Starting validator... Test Label");
+    // std::thread::sleep(Duration::from_secs(10));
+    // let mut input = String::new();
+    // std::io::stdin().read_line(&mut input).expect("读取输入失败");
+    // println!("用户输入了: {}", input.trim());
     let default_args = DefaultArgs::new();
     let solana_version = solana_version::version!();
     let cli_app = app(solana_version, &default_args);
@@ -926,7 +931,9 @@ pub fn main() {
 
     info!("{} {}", crate_name!(), solana_version);
     info!("Starting validator with: {:#?}", std::env::args_os());
-
+    // println!("Starting  validator with: {:#?}", std::env::args_os());
+    // std::thread::sleep(Duration::from_secs(10));
+    
     let cuda = matches.is_present("cuda");
     if cuda {
         solana_perf::perf_libs::init_cuda();
