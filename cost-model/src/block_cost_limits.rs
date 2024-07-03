@@ -15,7 +15,7 @@ use {
 /// is currently publicly communicated on solana.com
 pub const MAX_BLOCK_REPLAY_TIME_US: u64 = 400_000;
 /// number of concurrent processes,
-pub const MAX_CONCURRENCY: u64 = 4;
+pub const MAX_CONCURRENCY: u64 = 256;
 
 // Cluster data, method of collecting at https://github.com/solana-labs/solana/issues/19627
 // Dashboard: https://metrics.solana.com/d/monitor-edge/cluster-telemetry?orgId=1
