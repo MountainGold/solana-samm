@@ -21,7 +21,8 @@ pub const MAX_CONCURRENCY: u64 = 4;
 // Dashboard: https://metrics.solana.com/d/monitor-edge/cluster-telemetry?orgId=1
 
 /// Cluster averaged compute unit to micro-sec conversion rate
-pub const COMPUTE_UNIT_TO_US_RATIO: u64 = 30;
+// pub const COMPUTE_UNIT_TO_US_RATIO: u64 = 30;
+pub const COMPUTE_UNIT_TO_US_RATIO: u64 = 100;
 /// Number of compute units for one signature verification.
 pub const SIGNATURE_COST: u64 = COMPUTE_UNIT_TO_US_RATIO * 24;
 /// Number of compute units for one secp256k1 signature verification.
