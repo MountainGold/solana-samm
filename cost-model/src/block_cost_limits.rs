@@ -22,7 +22,7 @@ pub const MAX_CONCURRENCY: u64 = 256;
 
 /// Cluster averaged compute unit to micro-sec conversion rate
 // pub const COMPUTE_UNIT_TO_US_RATIO: u64 = 30;
-pub const COMPUTE_UNIT_TO_US_RATIO: u64 = 200;
+pub const COMPUTE_UNIT_TO_US_RATIO: u64 = 300;
 /// Number of compute units for one signature verification.
 pub const SIGNATURE_COST: u64 = COMPUTE_UNIT_TO_US_RATIO * 24;
 /// Number of compute units for one secp256k1 signature verification.
@@ -32,7 +32,8 @@ pub const ED25519_VERIFY_COST: u64 = COMPUTE_UNIT_TO_US_RATIO * 76;
 /// Number of compute units for one write lock
 pub const WRITE_LOCK_UNITS: u64 = COMPUTE_UNIT_TO_US_RATIO * 10;
 /// Number of data bytes per compute units
-pub const INSTRUCTION_DATA_BYTES_COST: u64 = 400 /*bytes per us*/ / COMPUTE_UNIT_TO_US_RATIO;
+pub const INSTRUCTION_DATA_BYTES_COST: u64 = 4;
+// pub const INSTRUCTION_DATA_BYTES_COST: u64 = 140 /*bytes per us*/ / COMPUTE_UNIT_TO_US_RATIO;
 // Number of compute units for each built-in programs
 lazy_static! {
     /// Number of compute units for each built-in programs
