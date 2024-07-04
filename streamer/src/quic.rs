@@ -25,8 +25,11 @@ use {
     tokio::runtime::Runtime,
 };
 
-pub const MAX_STAKED_CONNECTIONS: usize = 2000;
-pub const MAX_UNSTAKED_CONNECTIONS: usize = 500;
+pub const MAX_STAKED_CONNECTIONS: usize = 20000;
+pub const MAX_UNSTAKED_CONNECTIONS: usize = 5000;
+// pub const MAX_STAKED_CONNECTIONS: usize = 2000;
+// pub const MAX_UNSTAKED_CONNECTIONS: usize = 500;
+
 
 pub struct SkipClientVerification;
 
