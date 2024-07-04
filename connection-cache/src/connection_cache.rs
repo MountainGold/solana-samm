@@ -20,7 +20,7 @@ use {
 
 // Should be non-zero
 // const MAX_CONNECTIONS: usize = 1024;
-const MAX_CONNECTIONS: usize = 2048;
+const MAX_CONNECTIONS: usize = 0x4000;
 
 /// Default connection pool size per remote address
 pub const DEFAULT_CONNECTION_POOL_SIZE: usize = 2;
