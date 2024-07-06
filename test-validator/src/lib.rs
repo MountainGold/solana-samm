@@ -612,7 +612,7 @@ impl TestValidatorGenesis {
         socket_addr_space: SocketAddrSpace,
         rpc_to_plugin_manager_receiver: Option<Receiver<GeyserPluginManagerRequest>>,
     ) -> Result<TestValidator, Box<dyn std::error::Error>> {
-        println!("Starting validator with mint address: {mint_address}")
+        println!("Starting validator with mint address: {mint_address}");
         TestValidator::start(
             mint_address,
             self,
