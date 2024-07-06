@@ -22,8 +22,8 @@ use {
     },
 };
 
-const DEFAULT_CONNECTION_POOL_SIZE: usize = 4;
-// const DEFAULT_CONNECTION_POOL_SIZE: usize = 40;
+// const DEFAULT_CONNECTION_POOL_SIZE: usize = 4;
+const DEFAULT_CONNECTION_POOL_SIZE: usize = 40;
 const DEFAULT_CONNECTION_CACHE_USE_QUIC: bool = true;
 
 /// A thin wrapper over connection-cache/ConnectionCache to ease
