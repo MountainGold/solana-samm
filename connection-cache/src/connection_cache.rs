@@ -20,11 +20,11 @@ use {
 
 // Should be non-zero
 // const MAX_CONNECTIONS: usize = 1024;
-const MAX_CONNECTIONS: usize = 0x4000;
+const MAX_CONNECTIONS: usize = 4096;
 
 /// Default connection pool size per remote address
-// pub const DEFAULT_CONNECTION_POOL_SIZE: usize = 2;
-pub const DEFAULT_CONNECTION_POOL_SIZE: usize = 20;
+pub const DEFAULT_CONNECTION_POOL_SIZE: usize = 2;
+// pub const DEFAULT_CONNECTION_POOL_SIZE: usize = 20;
 
 #[derive(Clone, Copy, Eq, Hash, PartialEq)]
 pub enum Protocol {
