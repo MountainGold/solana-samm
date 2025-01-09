@@ -458,10 +458,6 @@ fn configure_banking_trace_dir_byte_limit(
 
 pub fn main() {
     println!("Starting validator... Test Label");
-    // std::thread::sleep(Duration::from_secs(10));
-    // let mut input = String::new();
-    // std::io::stdin().read_line(&mut input).expect("读取输入失败");
-    // println!("用户输入了: {}", input.trim());
     let default_args = DefaultArgs::new();
     let solana_version = solana_version::version!();
     let cli_app = app(solana_version, &default_args);
